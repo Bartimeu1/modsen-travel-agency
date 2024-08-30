@@ -1,1 +1,8 @@
-{}
+{
+  "Header": {
+    "home": "Home",
+    "rooms": "Rooms",
+    "about": "About",
+    "contact": "Contact"
+  }
+}

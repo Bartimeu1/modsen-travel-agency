@@ -1,0 +1,31 @@
+.localeSwitcher {
+  position: relative;
+}
+
+.localeSelect {
+  @include flex($direction: column);
+
+  position: absolute;
+  padding: 10px;
+  border: 1px solid $color-light-grey;
+  border-radius: $border-radius-lg;
+  top: 110%;
+  left: -10px;
+  box-shadow:
+    2px 4px 8px $color-shadow,
+    2px 8px 16px $color-shadow,
+    2px 8px 16px $color-shadow;
+}
+
+.localeSelectButton {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &.target {
+    opacity: 0.3;
+    cursor: default;
+  }
+}
