@@ -4,5 +4,44 @@
     "rooms": "Rooms",
     "about": "About",
     "contact": "Contact"
+  },
+  "Footer": {
+    "infoTitle": "Paradise view",
+    "infoText": "The service at the Hotel Monteleone was exceptional. There was absolutely no issue that was not addressed timely and with satisfactory results. We were particulary impressed with how the hotel staff anticipated our needs (periodically coming by the Board Room to check with us)",
+    "navigation": {
+      "titles": {
+        "quickLinks": "Quick links",
+        "company": "Company",
+        "socialMedia": "Social media"
+      },
+      "links": {
+        "roomBooking": "Room booking",
+        "rooms": "Rooms",
+        "contact": "Contact",
+        "explore": "Explore",
+        "privacyPolicy": "Privacy policy",
+        "refundPolicy": "Refund policy",
+        "FAQ": "F.A.Q",
+        "about": "About",
+        "facebook": "Facebook",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "linkedin": "Linkedin"
+      }
+    }
+  },
+  "Subscribe": {
+    "title": "Newsletter",
+    "subtitle": "Kindly subscribe to our newsletter to get latest deals on our rooms and vacation discount.",
+    "placeholder": "Enter your email",
+    "button": "Subscribe"
+  },
+  "Toast": {
+    "error": "Something went wrong!",
+    "success": "Operation completed successfully!"
+  },
+  "Validation": {
+    "fieldRequired": "This field is required",
+    "invalidEmail": "Must be a valid email"
   }
 }
