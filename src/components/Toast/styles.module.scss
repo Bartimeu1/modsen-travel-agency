@@ -1,0 +1,35 @@
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.toast {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 10;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 2px $color-black;
+  transition: transform 0.3s ease-in-out;
+  animation: fadeOut 8s forwards;
+
+  &.error {
+    background: $color-red;
+  }
+
+  &.success {
+    background: $color-success;
+  }
+}
+
+.toastText {
+  @include font($weight: $font-weight-bold);
+
+  color: $color-white;
+}
