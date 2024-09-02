@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 
+import { Footer } from '@components/Footer';
 import { Header } from '@components/Header';
 
 import { getFontsClasses } from '@utils/get-fonts-classes';
@@ -33,6 +34,7 @@ export default function RootLayout({
           <NextIntlClientProvider locale={locale} messages={messages}>
             <Header />
             {children}
+            <Footer />
           </NextIntlClientProvider>
         </ApolloWrapper>
       </body>
