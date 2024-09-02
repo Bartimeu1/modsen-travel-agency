@@ -12,6 +12,11 @@ const nextConfig = {
     additionalData:
       '@import "./src/styles/_mixins.scss"; @import "./src/styles/_globals.scss";',
   },
+  env: {
+    SENDMAIL_SERVICE_ID: process.env.SENDMAIL_SERVICE_ID,
+    SENDMAIL_SUBSCRIBE_TEMPLATE_ID: process.env.SENDMAIL_SUBSCRIBE_TEMPLATE_ID,
+    SENDMAIL_PUBLIC_KEY: process.env.SENDMAIL_PUBLIC_KEY,
+  },
   images: {
     remotePatterns: [
       {
