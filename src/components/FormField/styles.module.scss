@@ -1,0 +1,12 @@
+.formField {
+  position: relative;
+}
+
+.errorText {
+  @include font($size: $font-size-xs4);
+
+  position: absolute;
+  bottom: -18px;
+  left: 18px;
+  color: $color-red;
+}
