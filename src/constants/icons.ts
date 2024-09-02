@@ -1,5 +1,25 @@
+import BreakfastIcon from '@assets/images/breakfast.svg';
 import EngIcon from '@assets/images/engFlag.svg';
+import GameCenterIcon from '@assets/images/gameCenter.svg';
+import GymIcon from '@assets/images/gym.svg';
+import LaundryIcon from '@assets/images/laundry.svg';
+import LightIcon from '@assets/images/light.svg';
 import LogoIcon from '@assets/images/logo.svg';
+import ParkingSpaceIcon from '@assets/images/parkingSpace.svg';
 import RusIcon from '@assets/images/rusFlag.svg';
+import SwimmingIcon from '@assets/images/swimming.svg';
+import WifiIcon from '@assets/images/wifi.svg';
 
-export { LogoIcon, EngIcon, RusIcon };
+export {
+  LogoIcon,
+  EngIcon,
+  RusIcon,
+  BreakfastIcon,
+  GameCenterIcon,
+  GymIcon,
+  LaundryIcon,
+  LightIcon,
+  ParkingSpaceIcon,
+  SwimmingIcon,
+  WifiIcon,
+};

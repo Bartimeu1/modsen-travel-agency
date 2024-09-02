@@ -43,5 +43,19 @@
   "Validation": {
     "fieldRequired": "This field is required",
     "invalidEmail": "Must be a valid email"
+  },
+  "Facilities": {
+    "title": "Our Facilities",
+    "subtitle": "We offer modern (5 star) hotel facilities for your comfort.",
+    "items": {
+      "swimming": "Swimming Pool",
+      "wifi": "Wifi",
+      "breakfast": "Breakfast",
+      "gym": "Gym",
+      "game": "Game center",
+      "light": "24/7 Light",
+      "laundry": "Laundry",
+      "parking": "Parking space"
+    }
   }
 }
