@@ -38,15 +38,19 @@ export const LocalizationSwitcher = () => {
     setIsLocaleSelection((prevState) => !prevState);
   };
 
-  useOnClickOutside(localeSelectRef, onSelectionButtonClick);
+  const onSelectOutsideClick = () => {
+    setIsLocaleSelection(false);
+  };
+
+  useOnClickOutside(localeSelectRef, onSelectOutsideClick);
 
   return (
-    <div className={styles.localeSwitcher}>
+    <div className={styles.localeSwitcher} ref={localeSelectRef}>
       <button onClick={onSelectionButtonClick}>
         {localizationFlags[locale]}
       </button>
       {isLocaleSelection && (
-        <div className={styles.localeSelect} ref={localeSelectRef}>
+        <div className={styles.localeSelect}>
           {Object.entries(localizationFlags).map(([key, flag]) => (
             <button
               key={key}
