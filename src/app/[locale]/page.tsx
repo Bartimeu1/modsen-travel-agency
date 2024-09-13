@@ -1,10 +1,16 @@
+import { Banner } from './components/Banner';
 import { Facilities } from './components/Facilities';
+import { Reviews } from './components/Reviews';
+import { Rooms } from './components/Rooms';
 
 const HomePage = () => {
   return (
-    <div className="container">
+    <>
+      <Banner />
       <Facilities />
-    </div>
+      <Rooms />
+      <Reviews />
+    </>
   );
 };
 
