@@ -44,18 +44,38 @@
     "fieldRequired": "This field is required",
     "invalidEmail": "Must be a valid email"
   },
-  "Facilities": {
-    "title": "Our Facilities",
-    "subtitle": "We offer modern (5 star) hotel facilities for your comfort.",
-    "items": {
-      "swimming": "Swimming Pool",
-      "wifi": "Wifi",
-      "breakfast": "Breakfast",
-      "gym": "Gym",
-      "game": "Game center",
-      "light": "24/7 Light",
-      "laundry": "Laundry",
-      "parking": "Parking space"
+  "Home": {
+    "Facilities": {
+      "title": "Our Facilities",
+      "subtitle": "We offer modern (5 star) hotel facilities for your comfort.",
+      "items": {
+        "swimming": "Swimming Pool",
+        "wifi": "Wifi",
+        "breakfast": "Breakfast",
+        "gym": "Gym",
+        "game": "Game center",
+        "light": "24/7 Light",
+        "laundry": "Laundry",
+        "parking": "Parking space"
+      }
+    },
+    "Banner": {
+      "company": "Paradise View",
+      "title": "Hotel for every moment rich in emotion",
+      "subtitle": "Every moment feels like the first time in paradise view",
+      "tourButton": "Take a tour"
+    },
+    "Rooms": {
+      "title": "Luxurious Rooms",
+      "subtitle": "All room are design for your comfort",
+      "items": {
+        "base": "Television set, Extra sheets and Breakfast",
+        "middle": "Television set, Extra sheets, Breakfast, and fireplace",
+        "luxury": "Television set, Extra sheets, Breakfast, and fireplace, Console and bed rest"
+      }
+    },
+    "Reviews": {
+      "title": "Testimonies"
     }
   }
 }

@@ -6,7 +6,12 @@ import LaundryIcon from '@assets/images/laundry.svg';
 import LightIcon from '@assets/images/light.svg';
 import LogoIcon from '@assets/images/logo.svg';
 import ParkingSpaceIcon from '@assets/images/parkingSpace.svg';
+import PlayIcon from '@assets/images/play.svg';
+import QuoteEnd from '@assets/images/quoteEnd.svg';
+import QuoteStart from '@assets/images/quoteStart.svg';
 import RusIcon from '@assets/images/rusFlag.svg';
+import SliderNavButton from '@assets/images/sliderNavButton.svg';
+import StarIcon from '@assets/images/star.svg';
 import SwimmingIcon from '@assets/images/swimming.svg';
 import WifiIcon from '@assets/images/wifi.svg';
 
@@ -22,4 +27,9 @@ export {
   ParkingSpaceIcon,
   SwimmingIcon,
   WifiIcon,
+  PlayIcon,
+  QuoteStart,
+  QuoteEnd,
+  SliderNavButton,
+  StarIcon,
 };
