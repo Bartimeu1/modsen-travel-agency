@@ -33,7 +33,7 @@ export default function RootLayout({
         <ApolloWrapper>
           <NextIntlClientProvider locale={locale} messages={messages}>
             <Header />
-            {children}
+            <main>{children}</main>
             <Footer />
           </NextIntlClientProvider>
         </ApolloWrapper>

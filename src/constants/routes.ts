@@ -3,4 +3,5 @@ export const routes = {
   rooms: '/rooms',
   about: '/about',
   contact: '/contact',
+  tour: '/tour',
 };

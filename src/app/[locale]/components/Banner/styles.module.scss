@@ -1,0 +1,87 @@
+.banner {
+  margin-bottom: 63px;
+  background: $color-light-grey;
+}
+
+.bannerContainer {
+  position: relative;
+  padding: 0 10px;
+  padding: 69px 0 40px;
+
+  &::after {
+    @include bgImage($image: '~src/assets/images/homeBannerBg.webp');
+
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 2;
+  }
+}
+
+.bannerContent {
+  position: relative;
+  height: 100%;
+  margin-bottom: 60px;
+
+  & h1 {
+    @include font($size: $font-size-xl, $weight: $font-weight-semiBold);
+
+    max-width: 600px;
+    margin-bottom: 23px;
+    color: $color-dark;
+  }
+
+  & h3 {
+    @include font($family: var(--font-dancing), $size: $font-size-lg);
+
+    color: $color-brown;
+    margin-bottom: 26px;
+  }
+}
+
+.bannerSubtitle {
+  @include font($size: $font-size-xs3);
+
+  color: $color-dark;
+  max-width: 260px;
+  margin-bottom: 27px;
+}
+
+.tourLink {
+  @include flex($align: center);
+
+  width: fit-content;
+
+  & p {
+    @include font($family: var(--font-inter), $size: $font-size-xs);
+
+    color: $color-dark;
+  }
+
+  .tourButton {
+    border-radius: $border-radius-circle;
+    border: 1px solid $color-green;
+    background: $color-green;
+    width: 55px;
+    height: 55px;
+    margin-right: 18px;
+  }
+
+  &:hover {
+    & p {
+      color: $color-brown;
+    }
+
+    .tourButton {
+      background: inherit;
+      border-color: $color-brown;
+
+      & path {
+        fill: $color-brown;
+      }
+    }
+  }
+}

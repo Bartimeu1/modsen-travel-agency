@@ -1,0 +1,62 @@
+.select {
+  position: relative;
+}
+
+.label {
+  @include flex($align: center);
+
+  cursor: pointer;
+
+  & p {
+    @include font(
+      $family: var(--font-poppins),
+      $weight: $font-weight-medium,
+      $size: $font-size-xs4
+    );
+
+    margin-right: 7px;
+    color: $color-dark;
+    opacity: 0.6;
+  }
+
+  & svg {
+    transition: 0.3s all ease-in-out;
+  }
+
+  &.active {
+    & svg {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.dropdown {
+  @include flex($direction: column);
+
+  overflow: hidden;
+  position: absolute;
+  background: $color-white;
+  top: 100%;
+  width: 100%;
+  border: 1px solid $color-dark-brown;
+  border-radius: $border-radius-md;
+
+  & button {
+    @include font(
+      $family: var(--font-poppins),
+      $weight: $font-weight-medium,
+      $size: $font-size-xs4
+    );
+
+    background: inherit;
+    padding: 10px 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s all ease-in-out;
+
+    &:hover {
+      background: $color-brown;
+      color: $color-white;
+    }
+  }
+}

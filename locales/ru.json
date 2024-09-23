@@ -42,7 +42,9 @@
   },
   "Validation": {
     "fieldRequired": "Это поле обязательное",
-    "invalidEmail": "Должен быть валидный Email"
+    "invalidEmail": "Должен быть валидный Email",
+    "shortValue": "Это значение слишком короткое",
+    "longValue": "Это значение слишком длинное"
   },
   "Home": {
     "Facilities": {
@@ -76,6 +78,22 @@
     },
     "Reviews": {
       "title": "Отзывы"
+    },
+    "BookingPlate": {
+      "fields": {
+        "location": "Локация",
+        "roomType": "Тип комнаты",
+        "person": "Количество",
+        "checkIn": "Дата заезда",
+        "checkOut": "Дата выезда"
+      },
+      "button": "Забронировать",
+      "modal": {
+        "title": "Укажите ваши данные",
+        "button": "Забронировать",
+        "namePlaceholder": "Введите ваше имя",
+        "emailPlaceholder": "Введите ваш email"
+      }
     }
   }
 }

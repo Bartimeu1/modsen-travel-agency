@@ -42,7 +42,9 @@
   },
   "Validation": {
     "fieldRequired": "This field is required",
-    "invalidEmail": "Must be a valid email"
+    "invalidEmail": "Must be a valid email",
+    "shortValue": "This value is too short",
+    "longValue": "This value is too long"
   },
   "Home": {
     "Facilities": {
@@ -76,6 +78,22 @@
     },
     "Reviews": {
       "title": "Testimonies"
+    },
+    "BookingPlate": {
+      "fields": {
+        "location": "Location",
+        "roomType": "Room Type",
+        "person": "Person",
+        "checkIn": "Check In",
+        "checkOut": "Check Out"
+      },
+      "button": "Book Now",
+      "modal": {
+        "title": "Enter your details",
+        "button": "Confirm",
+        "namePlaceholder": "Enter your Name",
+        "emailPlaceholder": "Enter your Email"
+      }
     }
   }
 }

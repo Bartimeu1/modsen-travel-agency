@@ -8,8 +8,7 @@ import { FormField } from '@components/FormField';
 import { Toast } from '@components/Toast';
 
 import { sendSubscribeMail } from '@root/services';
-import { IToastControls, ToastTypesEnum } from '@root/types';
-import { IErrorsObject } from '@root/types';
+import { IErrorsObject,IToastControls, ToastTypesEnum } from '@root/types';
 
 import { defaultFormValues, validationSchema } from './config';
 
