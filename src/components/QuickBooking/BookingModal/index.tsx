@@ -1,6 +1,6 @@
 'use client';
 
-import { ChangeEvent,useCallback, useRef, useState } from 'react';
+import { ChangeEvent, useCallback, useRef, useState } from 'react';
 import { FormEvent } from 'react';
 import { useTranslations } from 'next-intl';
 import { ValidationError } from 'yup';
@@ -10,9 +10,9 @@ import { PortalWrapper } from '@components/PortalWrapper';
 import { Toast } from '@components/Toast';
 
 import { useLockBodyScroll, useOnClickOutside } from '@root/hooks';
-import { IErrorsObject,IToastControls, ToastTypesEnum } from '@root/types';
+import { IErrorsObject, IToastControls, ToastTypesEnum } from '@root/types';
 
-import { defaultFormValues,validationSchema } from './config';
+import { defaultFormValues, validationSchema } from './config';
 import { BookingModalProps } from './types';
 
 import styles from './styles.module.scss';

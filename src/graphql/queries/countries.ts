@@ -8,3 +8,16 @@ export const BOOKING_COUNTRIES = gql`
     }
   }
 `;
+
+export const SEARCH_COUNTRIES = gql`
+  query GetCountries($search: String) {
+    countries(filter: { name: { regex: $search } }) {
+      id: code
+      name
+      currency
+      languages {
+        name
+      }
+    }
+  }
+`;

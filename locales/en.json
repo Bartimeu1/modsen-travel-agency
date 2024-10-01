@@ -95,5 +95,29 @@
         "emailPlaceholder": "Enter your Email"
       }
     }
+  },
+  "Tour": {
+    "Banner": {
+      "company": "Paradise View",
+      "title": "Cross-country tour",
+      "subtitle": "Every moment feels like the first time in paradise view",
+      "link": "Book now"
+    },
+    "BestTour": {
+      "title": "Give yourself the best tour"
+    },
+    "TourSearch": {
+      "title": "Tour search",
+      "subtitle": "Choose a tour to any country",
+      "placeholder": "Search"
+    },
+    "TourCard": {
+      "currency": "Currency",
+      "button": "More"
+    },
+    "TourList": {
+      "errorText": "Request Error",
+      "nothingFoundText": "Nothing found"
+    }
   }
 }

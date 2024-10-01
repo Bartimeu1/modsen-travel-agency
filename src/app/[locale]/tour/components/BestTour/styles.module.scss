@@ -1,0 +1,38 @@
+.bestTour {
+  @include bgImage($image: '~src/assets/images/roomsBg.webp');
+
+  position: relative;
+  padding: 97px 0 133px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    background: $color-brown;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+  }
+
+  & h2 {
+    @include font($size: $font-size-lg, $weight: $font-weight-medium);
+
+    color: $color-white;
+    position: relative;
+    margin-bottom: 34px;
+    z-index: 1;
+    text-align: center;
+
+    &::after {
+      content: '';
+      bottom: -58px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      position: absolute;
+      width: 138px;
+      height: 6px;
+      background: $color-white;
+    }
+  }
+}

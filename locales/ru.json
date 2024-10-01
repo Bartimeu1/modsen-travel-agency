@@ -95,5 +95,29 @@
         "emailPlaceholder": "Введите ваш email"
       }
     }
+  },
+  "Tour": {
+    "Banner": {
+      "company": "Paradise View",
+      "title": "Тур по живописным маршрутам",
+      "subtitle": "Каждое мгновение ощущается как первый раз в раю",
+      "link": "Забронировать"
+    },
+    "BestTour": {
+      "title": "Подарите себе лучший тур"
+    },
+    "TourSearch": {
+      "title": "Поиск туров",
+      "subtitle": "Выберите тур в любую страну",
+      "placeholder": "Поиск"
+    },
+    "TourCard": {
+      "currency": "Валюта",
+      "button": "Больше"
+    },
+    "TourList": {
+      "errorText": "Ошибка запроса",
+      "nothingFoundText": "Ничего не найдено"
+    }
   }
 }

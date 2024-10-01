@@ -1,0 +1,71 @@
+.banner {
+  margin-bottom: 63px;
+  background: $color-light-grey;
+}
+
+.bannerContainer {
+  position: relative;
+  padding: 0 10px;
+  padding: 69px 0 210px;
+
+  &::after {
+    @include bgImage($image: '~src/assets/images/homeBannerBg.webp');
+
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 2;
+  }
+}
+
+.bannerContent {
+  position: relative;
+  height: 100%;
+  margin-bottom: 60px;
+
+  & h1 {
+    @include font($size: $font-size-xl, $weight: $font-weight-semiBold);
+
+    max-width: 385px;
+    margin-bottom: 96px;
+    color: $color-dark;
+  }
+
+  & h3 {
+    @include font($family: var(--font-dancing), $size: $font-size-lg);
+
+    color: $color-brown;
+    margin-bottom: 18px;
+  }
+}
+
+.bannerSubtitle {
+  @include font($size: $font-size-xs3);
+
+  color: $color-dark;
+  max-width: 260px;
+  margin-bottom: 35px;
+}
+
+.tourLink {
+  @include font(
+    $family: var(--font-inter),
+    $size: $font-size-xs,
+    $weight: $font-weight-medium
+  );
+
+  color: $color-white;
+  background: $color-brown;
+  padding: 14px 35px;
+  border-radius: $border-radius-xl;
+  border: 1px solid $color-brown;
+  transition: 0.3s all ease-in-out;
+
+  &:hover {
+    background: inherit;
+    color: $color-brown;
+  }
+}
