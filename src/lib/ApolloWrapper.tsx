@@ -1,21 +1,31 @@
 'use client';
 
-import { HttpLink } from '@apollo/client';
+import { QueryApiNamesEnum } from '@root/types';
+
+import { ApolloLink, HttpLink } from '@apollo/client';
 import {
   ApolloClient,
   ApolloNextAppProvider,
   InMemoryCache,
 } from '@apollo/experimental-nextjs-app-support';
 
-function makeClient() {
-  const httpLink = new HttpLink({
-    uri: 'https://countries.trevorblades.com',
-    fetchOptions: { cache: 'no-store' },
-  });
+const countriesLink = new HttpLink({
+  uri: 'https://countries.trevorblades.com',
+  fetchOptions: { cache: 'no-store' },
+});
 
+const roomsLink = new HttpLink({
+  uri: 'http://localhost:4000/graphql',
+});
+
+function makeClient() {
   return new ApolloClient({
     cache: new InMemoryCache(),
-    link: httpLink,
+    link: ApolloLink.split(
+      (operation) => operation.getContext().apiName === QueryApiNamesEnum.rooms,
+      roomsLink,
+      countriesLink,
+    ),
   });
 }
 

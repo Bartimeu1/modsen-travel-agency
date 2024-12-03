@@ -11,10 +11,15 @@ import LoaderIcon from '@assets/images/loader.svg';
 import LocationIcon from '@assets/images/location.svg';
 import LogoIcon from '@assets/images/logo.svg';
 import ParkingSpaceIcon from '@assets/images/parkingSpace.svg';
+import PauseButtonIcon from '@assets/images/pauseButton.svg';
 import PersonIcon from '@assets/images/person.svg';
 import PlayIcon from '@assets/images/play.svg';
+import PlayButtonIcon from '@assets/images/playButton.svg';
 import QuoteEnd from '@assets/images/quoteEnd.svg';
 import QuoteStart from '@assets/images/quoteStart.svg';
+import RoomNetIcon from '@assets/images/roomNet.svg';
+import RoomShowerIcon from '@assets/images/roomShower.svg';
+import RoomTVIcon from '@assets/images/roomTV.svg';
 import RoomTypeIcon from '@assets/images/roomType.svg';
 import RusIcon from '@assets/images/rusFlag.svg';
 import SearchIcon from '@assets/images/search.svg';
@@ -48,4 +53,9 @@ export {
   CountryFlag,
   SearchIcon,
   LoaderIcon,
+  PlayButtonIcon,
+  PauseButtonIcon,
+  RoomTVIcon,
+  RoomShowerIcon,
+  RoomNetIcon,
 };

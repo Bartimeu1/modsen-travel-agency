@@ -1,5 +1,5 @@
 'use client';
-import React, { ChangeEvent, useEffect,useState } from 'react';
+import { ChangeEvent, useEffect, useState } from 'react';
 import classNames from 'classnames';
 import { useTranslations } from 'next-intl';
 

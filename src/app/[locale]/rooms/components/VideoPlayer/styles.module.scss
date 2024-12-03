@@ -1,0 +1,25 @@
+.videoPlayer {
+  width: 100%;
+  position: relative;
+  padding-bottom: 54px;
+}
+
+.videoContent {
+  width: 100%;
+}
+
+.playButton {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  transition: 0.3s all ease-in-out;
+  box-shadow: 0px 4px 30px 10px $color-shadow;
+  border-radius: $border-radius-circle;
+
+  &.isActive {
+    opacity: 40%;
+    box-shadow: none;
+  }
+}
