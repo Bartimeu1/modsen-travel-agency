@@ -1,0 +1,87 @@
+.contact {
+  margin-bottom: 103px;
+}
+
+.contactForm {
+  @include flex($direction: column);
+}
+
+.userInfo {
+  @include flex($justify: space-between);
+
+  margin: 0 -36px 35px;
+}
+
+.infoField {
+  width: 100%;
+  margin: 0 36px;
+
+  & label {
+    @include font($family: var(--font-mulish), $size: $font-size-xs);
+
+    margin-bottom: 9px;
+    display: inline-block;
+    color: $color-black;
+    opacity: 0.7;
+  }
+
+  & input {
+    @include font($family: var(--font-mulish), $size: $font-size-xs2);
+
+    width: 100%;
+    border: 1px solid $color-dark;
+    padding: 23px 0 23px 21px;
+    outline: none;
+
+    &::placeholder {
+      opacity: 0.5;
+    }
+  }
+}
+
+.messageField {
+  margin-bottom: 24px;
+
+  & label {
+    @include font($family: var(--font-mulish), $size: $font-size-xs);
+
+    margin-bottom: 9px;
+    display: inline-block;
+    color: $color-black;
+    opacity: 0.7;
+  }
+
+  & textarea {
+    @include font($family: var(--font-mulish), $size: $font-size-xs2);
+
+    padding: 23px 0 0 25px;
+    width: 100%;
+    min-height: 334px;
+    resize: none;
+    outline: none;
+
+    &::placeholder {
+      opacity: 0.5;
+    }
+  }
+}
+
+.submitButton {
+  @include font(
+    $family: var(--font-sen),
+    $size: $font-size-sm,
+    $weight: $font-weight-bold
+  );
+
+  border: 1px solid $color-yellow;
+  background: $color-yellow;
+  color: $color-black;
+  transition: 0.3s all ease-in-out;
+  align-self: flex-end;
+  padding: 16px 90px;
+
+  &:hover {
+    background: inherit;
+    color: $color-yellow;
+  }
+}

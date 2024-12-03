@@ -14,9 +14,14 @@ const nextConfig = {
   },
   env: {
     SENDMAIL_SERVICE_ID: process.env.SENDMAIL_SERVICE_ID,
+    SENDMAIL_SECOND_SERVICE_ID: process.env.SENDMAIL_SECOND_SERVICE_ID,
     SENDMAIL_SUBSCRIBE_TEMPLATE_ID: process.env.SENDMAIL_SUBSCRIBE_TEMPLATE_ID,
     SENDMAIL_BOOKING_TEMPLATE_ID: process.env.SENDMAIL_BOOKING_TEMPLATE_ID,
+    SENDMAIL_CONTACT_TEMPLATE_ID: process.env.SENDMAIL_CONTACT_TEMPLATE_ID,
     SENDMAIL_PUBLIC_KEY: process.env.SENDMAIL_PUBLIC_KEY,
+    SENDMAIL_SECOND_PUBLIC_KEY: process.env.SENDMAIL_SECOND_PUBLIC_KEY,
+    MAPBOX_TOKEN: process.env.MAPBOX_TOKEN,
+    MAPBOX_STYLE: process.env.MAPBOX_STYLE,
   },
   images: {
     remotePatterns: [
@@ -31,6 +36,7 @@ const nextConfig = {
       test: /\.svg$/i,
       use: ['@svgr/webpack'],
     });
+
     return config;
   },
   compiler:

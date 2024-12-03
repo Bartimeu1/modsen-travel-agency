@@ -1,6 +1,9 @@
 import {
   SENDMAIL_BOOKING_TEMPLATE_ID,
+  SENDMAIL_CONTACT_TEMPLATE_ID,
   SENDMAIL_PUBLIC_KEY,
+  SENDMAIL_SECOND_PUBLIC_KEY,
+  SENDMAIL_SECOND_SERVICE_ID,
   SENDMAIL_SERVICE_ID,
   SENDMAIL_SUBSCRIBE_TEMPLATE_ID,
 } from '@root/config';
@@ -23,5 +26,14 @@ export const sendBookingMail = (bookingFields: BaseSendMailPayload) => {
     SENDMAIL_BOOKING_TEMPLATE_ID,
     bookingFields,
     SENDMAIL_PUBLIC_KEY,
+  );
+};
+
+export const sendContactMail = (contactFields: BaseSendMailPayload) => {
+  send(
+    SENDMAIL_SECOND_SERVICE_ID,
+    SENDMAIL_CONTACT_TEMPLATE_ID,
+    contactFields,
+    SENDMAIL_SECOND_PUBLIC_KEY,
   );
 };

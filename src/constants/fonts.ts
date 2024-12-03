@@ -20,7 +20,7 @@ const fontPoppins = Poppins({
   variable: '--font-poppins',
   weight: ['400', '500'],
 });
-const fontMulish = Mulish({ subsets: ['latin'], variable: '--font-latin' });
+const fontMulish = Mulish({ subsets: ['latin'], variable: '--font-mulish' });
 const fontRoboto = Roboto({
   subsets: ['latin'],
   variable: '--font-roboto',
