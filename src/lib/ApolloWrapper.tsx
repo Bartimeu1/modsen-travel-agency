@@ -15,7 +15,7 @@ const countriesLink = new HttpLink({
 });
 
 const roomsLink = new HttpLink({
-  uri: 'http://localhost:4000/graphql',
+  uri: 'https://rooms-graphql.vercel.app/graphql',
 });
 
 function makeClient() {

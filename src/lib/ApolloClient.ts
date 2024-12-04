@@ -8,7 +8,7 @@ import {
 } from '@apollo/experimental-nextjs-app-support';
 
 const roomsLink = new HttpLink({
-  uri: 'http://localhost:4000/graphql',
+  uri: 'https://rooms-graphql.vercel.app/graphql',
 });
 
 const countriesLink = new HttpLink({
