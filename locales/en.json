@@ -165,5 +165,9 @@
   "NotFound": {
     "title": "This page does not exist",
     "homeLink": "Home"
+  },
+  "Error": {
+    "title": "Something went wrong",
+    "homeLink": "Home"
   }
 }
