@@ -161,5 +161,9 @@
       "reservation": "Reservation",
       "notAvailable": "This room is not available"
     }
+  },
+  "NotFound": {
+    "title": "This page does not exist",
+    "homeLink": "Home"
   }
 }
