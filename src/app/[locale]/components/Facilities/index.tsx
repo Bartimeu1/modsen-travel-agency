@@ -1,5 +1,7 @@
 import { useTranslations } from 'next-intl';
 
+import { MotionArticle } from '@components/Motion';
+
 import { facilityItems } from './config';
 
 import styles from './styles.module.scss';
@@ -16,10 +18,16 @@ export const Facilities = () => {
         </div>
         <div className={styles.facilitiesList}>
           {facilityItems.map(({ id, textKey, icon }) => (
-            <article key={id} className={styles.facilitiesItem}>
+            <MotionArticle
+              key={id}
+              className={styles.facilitiesItem}
+              initial={{ x: 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true, amount: 1 }}
+            >
               {icon}
               <p>{t(`items.${textKey}`)}</p>
-            </article>
+            </MotionArticle>
           ))}
         </div>
       </div>

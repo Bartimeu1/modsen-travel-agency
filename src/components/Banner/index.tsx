@@ -1,5 +1,7 @@
 import classNames from 'classnames';
 
+import { MotionDiv } from '../Motion';
+
 import { BannerProps } from './types';
 
 import styles from './styles.module.scss';
@@ -9,10 +11,14 @@ export const Banner = (props: BannerProps) => {
 
   return (
     <section className={classNames(styles.banner, className)}>
-      <div className={classNames('container', styles.bannerContainer)}>
+      <MotionDiv
+        className={classNames('container', styles.bannerContainer)}
+        initial={{ x: -200, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+      >
         <h1>{title}</h1>
         {subtitle && <p>{subtitle}</p>}
-      </div>
+      </MotionDiv>
     </section>
   );
 };

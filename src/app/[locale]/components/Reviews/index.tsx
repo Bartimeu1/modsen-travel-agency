@@ -5,6 +5,7 @@ import { useTranslations } from 'next-intl';
 import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import { MotionDiv } from '@components/Motion';
 import { ReviewItem } from '@components/ReviewItem';
 
 import { SliderNavButton } from '@root/constants';
@@ -29,23 +30,29 @@ export const Reviews = () => {
             <SliderNavButton />
           </button>
         </div>
-        <Swiper
-          modules={[Navigation]}
-          slidesPerView={3}
-          spaceBetween={20}
-          watchOverflow
-          navigation={{
-            prevEl: `.${styles.prevButton}`,
-            nextEl: `.${styles.nextButton}`,
-            disabledClass: styles.disabled,
-          }}
+        <MotionDiv
+          initial={{ opacity: 0, scale: 0 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, amount: 0.6 }}
         >
-          {reviewsItems.map(({ id, ...reviewInfo }) => (
-            <SwiperSlide key={id}>
-              <ReviewItem {...reviewInfo} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+          <Swiper
+            modules={[Navigation]}
+            slidesPerView={3}
+            spaceBetween={20}
+            watchOverflow
+            navigation={{
+              prevEl: `.${styles.prevButton}`,
+              nextEl: `.${styles.nextButton}`,
+              disabledClass: styles.disabled,
+            }}
+          >
+            {reviewsItems.map(({ id, ...reviewInfo }) => (
+              <SwiperSlide key={id}>
+                <ReviewItem {...reviewInfo} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </MotionDiv>
       </div>
     </section>
   );

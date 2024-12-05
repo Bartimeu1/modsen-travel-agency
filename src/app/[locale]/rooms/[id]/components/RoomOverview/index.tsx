@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import { useTranslations } from 'next-intl';
 
+import { MotionDiv } from '@components/Motion';
 import { OverviewSlider } from '@components/OverviewSlider';
 import { StarRating } from '@components/StarRating';
 import { Tooltip } from '@components/Tooltip';
@@ -16,7 +17,11 @@ export const RoomOverview = (props: Room) => {
 
   return (
     <section className={styles.overview}>
-      <div className={classNames('container', styles.overviewContainer)}>
+      <MotionDiv
+        className={classNames('container', styles.overviewContainer)}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+      >
         <OverviewSlider banner={image} />
         <div className={styles.roomContent}>
           <div className={styles.roomInfo}>
@@ -42,7 +47,7 @@ export const RoomOverview = (props: Room) => {
             </button>
           )}
         </div>
-      </div>
+      </MotionDiv>
     </section>
   );
 };

@@ -1,5 +1,7 @@
 import { useTranslations } from 'next-intl';
 
+import { MotionArticle } from '@components/Motion';
+
 import { CountryFlag } from '@root/constants';
 
 import { TourItemProps } from './types';
@@ -13,7 +15,12 @@ export const TourCard = (props: TourItemProps) => {
   const mainLanguage = languages[0];
 
   return (
-    <article className={styles.tourCard}>
+    <MotionArticle
+      className={styles.tourCard}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true, amount: 0.5 }}
+    >
       <p className={styles.currency}>
         {t('currency')} - {currency}
       </p>
@@ -27,6 +34,6 @@ export const TourCard = (props: TourItemProps) => {
         </div>
         <button>{t('button')}</button>
       </div>
-    </article>
+    </MotionArticle>
   );
 };

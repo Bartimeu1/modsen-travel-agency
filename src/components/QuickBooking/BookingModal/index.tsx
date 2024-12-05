@@ -6,6 +6,7 @@ import { useTranslations } from 'next-intl';
 import { ValidationError } from 'yup';
 
 import { FormField } from '@components/FormField';
+import { MotionForm } from '@components/Motion';
 import { PortalWrapper } from '@components/PortalWrapper';
 import { Toast } from '@components/Toast';
 
@@ -79,10 +80,12 @@ export const BookingModal = ({ onSendMail, onClose }: BookingModalProps) => {
   return (
     <PortalWrapper>
       <div className={styles.bookingModal}>
-        <form
+        <MotionForm
           onSubmit={onFormSubmit}
           className={styles.bookingForm}
           ref={contentRef}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
         >
           <h2>{t('title')}</h2>
           <FormField errorText={nameErrorText} className={styles.bookingField}>
@@ -106,7 +109,7 @@ export const BookingModal = ({ onSendMail, onClose }: BookingModalProps) => {
           <button type="submit" className={styles.submitButton}>
             {t('button')}
           </button>
-        </form>
+        </MotionForm>
         {toastControls.isVisible && (
           <Toast type={toastControls.type} closeToast={closeToast} />
         )}

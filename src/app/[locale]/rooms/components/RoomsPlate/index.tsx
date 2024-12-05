@@ -7,6 +7,7 @@ import { useTranslations } from 'next-intl';
 
 import { ImageWithSkeleton } from '@components/ImageWithSkeleton';
 import { Loader } from '@components/Loader';
+import { MotionArticle } from '@components/Motion';
 
 import { BASE_ROOMS_DATA, routes } from '@root/constants';
 import { GET_ROOMS } from '@root/graphql/rooms';
@@ -74,7 +75,13 @@ export const RoomsPlate = () => {
       <div className={classNames('container', styles.roomsContainer)}>
         <div className={styles.roomsList}>
           {roomsList?.map(({ id, title, image, price, available }) => (
-            <article key={id} className={styles.roomItem}>
+            <MotionArticle
+              key={id}
+              className={styles.roomItem}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true, amount: 0.5 }}
+            >
               <div className={styles.topper}>
                 <ImageWithSkeleton
                   src={image}
@@ -109,7 +116,7 @@ export const RoomsPlate = () => {
                   </Link>
                 </div>
               </div>
-            </article>
+            </MotionArticle>
           ))}
         </div>
         {hasMoreRoomsData && (

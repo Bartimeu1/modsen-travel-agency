@@ -44,9 +44,9 @@
   position: relative;
   background: linear-gradient(
     90deg,
-    #f0f0f0 25%,
-    rgba(124, 106, 70, 0.6) 50%,
-    #f0f0f0 75%
+    rgba(124, 106, 70, 0.1) 25%,
+    rgba(124, 106, 70, 0.3) 50%,
+    rgba(124, 106, 70, 0.1) 75%
   );
   background-size: 200% 100%;
   animation: loading 1.5s infinite;

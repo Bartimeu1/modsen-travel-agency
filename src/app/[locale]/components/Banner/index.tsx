@@ -2,17 +2,21 @@ import classNames from 'classnames';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 
+import { MotionSection } from '@components/Motion';
 import { BookingPlate } from '@components/QuickBooking';
 
-import { PlayIcon } from '@root/constants';
-import { routes } from '@root/constants';
+import { PlayIcon, routes } from '@root/constants';
 
 import styles from './styles.module.scss';
 export const Banner = () => {
   const t = useTranslations('Home.Banner');
 
   return (
-    <section className={styles.banner}>
+    <MotionSection
+      className={styles.banner}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+    >
       <div className={classNames('container', styles.bannerContainer)}>
         <div className={styles.bannerContent}>
           <h3>{t('company')}</h3>
@@ -27,6 +31,6 @@ export const Banner = () => {
         </div>
         <BookingPlate />
       </div>
-    </section>
+    </MotionSection>
   );
 };

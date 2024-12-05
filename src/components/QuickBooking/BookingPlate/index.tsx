@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useEffect,useState } from 'react';
 import DatePicker from 'react-datepicker';
 import { useTranslations } from 'next-intl';
 
@@ -38,15 +38,15 @@ export const BookingPlate = () => {
   const { countries: countriesList } = countriesData || {};
   const { location, roomType, person, checkIn, checkOut } = BookingFieldsEnum;
 
-  // useEffect(() => {
-  //   if (!isLoading) {
-  //     setBookingValues((prevState) => ({
-  //       ...prevState,
-  //       [location]: countriesList[0].value,
-  //     }));
-  //   }
-  //   // eslint-disable-next-line
-  // }, [isLoading]);
+  useEffect(() => {
+    if (!isLoading) {
+      setBookingValues((prevState) => ({
+        ...prevState,
+        [location]: countriesList[0].value,
+      }));
+    }
+    // eslint-disable-next-line
+  }, [isLoading]);
 
   const onPlateFieldChange = (name: string, value: string | Date) => {
     setBookingValues((prevState) => ({ ...prevState, [name]: value }));
