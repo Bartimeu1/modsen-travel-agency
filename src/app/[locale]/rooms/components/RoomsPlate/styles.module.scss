@@ -3,16 +3,15 @@
 }
 
 .roomsContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex($direction: column, $align: center);
 }
 
 .roomsList {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 47px;
-  justify-content: space-between;
+  grid-template-columns: repeat(auto-fill, minmax(410px, 1fr));
+  justify-items: center;
+  row-gap: 47px;
 }
 
 .roomItem {
@@ -138,4 +137,26 @@
 .topper {
   height: 260px;
   width: 100%;
+}
+
+@media screen and (max-width: $breakpoint-mobileM) {
+  .roomsList {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  .topper {
+    height: 230px;
+    width: 100%;
+  }
+
+  .roomItem {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: $breakpoint-mobileS) {
+  .controlsIcons svg {
+    margin-right: 15px;
+  }
 }
