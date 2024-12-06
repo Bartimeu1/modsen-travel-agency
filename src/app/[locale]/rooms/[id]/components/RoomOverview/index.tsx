@@ -19,8 +19,8 @@ export const RoomOverview = (props: Room) => {
     <section className={styles.overview}>
       <MotionDiv
         className={classNames('container', styles.overviewContainer)}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{ opacity: 1, scale: 1 }}
       >
         <OverviewSlider banner={image} />
         <div className={styles.roomContent}>

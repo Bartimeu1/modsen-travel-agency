@@ -15,7 +15,7 @@
 .roomInfo {
   @include flex($direction: column);
 
-  padding-right: 100px;
+  padding-right: 90px;
 
   & h2 {
     @include font(
@@ -93,5 +93,34 @@
   &:disabled {
     border: 1px solid $color-dark-grey;
     color: $color-dark-grey;
+  }
+}
+
+@media screen and (max-width: $breakpoint-desktopM) {
+  .overviewContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .roomContent {
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .roomInfo {
+    align-items: center;
+    text-align: center;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .roomInfo h2 {
+    font-size: 38px;
+  }
+
+  .infoText {
+    font-size: $font-size-xs4;
+    line-height: 18px;
   }
 }

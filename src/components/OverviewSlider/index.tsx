@@ -6,30 +6,38 @@ import type { Swiper as SwiperType } from 'swiper';
 import { Thumbs } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import { useWindowResize } from '@root/hooks';
+
 import 'swiper/css/thumbs';
 
-import { BASE_REVIEW_SLIDES } from './constants';
+import { BASE_REVIEW_SLIDES, SLIDER_HORIZONTAL_BREAKPOINT } from './constants';
+import { OverviewSliderProps, SwiperDirectionEnum } from './types';
 
 import 'swiper/css';
 import styles from './styles.module.scss';
 
-interface OverviewSliderProps {
-  banner: string;
-}
-
 export const OverviewSlider = ({ banner }: OverviewSliderProps) => {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
+  const { width } = useWindowResize();
 
   const overviewSlides = [{ id: 1, imgSrc: banner }, ...BASE_REVIEW_SLIDES];
+  const { horizontal, vertical } = SwiperDirectionEnum;
+  const thumbnailDirection =
+    width > SLIDER_HORIZONTAL_BREAKPOINT ? vertical : horizontal;
 
   return (
     <div className={styles.sliderContainer}>
       <Swiper
         onSwiper={setThumbsSwiper}
-        direction="vertical"
+        direction={thumbnailDirection}
         slidesPerView={4}
-        spaceBetween={30}
+        spaceBetween={10}
         className={styles.thumbnailSlider}
+        breakpoints={{
+          450: {
+            spaceBetween: 30,
+          },
+        }}
       >
         {overviewSlides.map((slide) => (
           <SwiperSlide key={slide.id} className={styles.thumbnailSlide}>

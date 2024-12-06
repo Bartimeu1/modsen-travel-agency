@@ -16,3 +16,5 @@ export const BASE_REVIEW_SLIDES = [
     imgSrc: reviewsThird,
   },
 ];
+
+export const SLIDER_HORIZONTAL_BREAKPOINT = 670;

@@ -29,7 +29,7 @@
 .mainImage {
   height: auto;
   width: 100%;
-  padding: 0 15px;
+  padding: 15px;
 }
 
 .thumbnailSlide {
@@ -47,4 +47,36 @@
   height: auto;
   border-radius: $border-radius-md;
   padding: 0 5px;
+}
+
+@media screen and (max-width: $breakpoint-tabletM) {
+  .sliderContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .mainSlider {
+    width: 100%;
+  }
+
+  .mainSlide {
+    width: auto;
+  }
+
+  .thumbnailSlider {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: none;
+    height: 80px;
+  }
+
+  .thumbnailSlide {
+    height: 100%;
+    padding: 0;
+  }
+
+  .thumbnailImage {
+    width: 100%;
+    height: auto;
+  }
 }

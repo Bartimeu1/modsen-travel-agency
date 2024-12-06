@@ -2,3 +2,15 @@
   padding: 110px 0 145px;
   margin-bottom: 114px;
 }
+
+@media screen and (max-width: $breakpoint-desktopM) {
+  .roomBanner {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-tabletM) {
+  .roomBanner {
+    padding: 100px 0;
+  }
+}
