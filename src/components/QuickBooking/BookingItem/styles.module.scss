@@ -31,3 +31,14 @@
 
   margin-bottom: 7px;
 }
+
+.imageWrapper {
+  width: 20px;
+}
+
+@media screen and (max-width: $breakpoint-desktopM) {
+  .bookingItem {
+    margin-bottom: 20px;
+    align-items: center;
+  }
+}

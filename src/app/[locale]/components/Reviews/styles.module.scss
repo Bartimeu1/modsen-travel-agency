@@ -58,3 +58,20 @@
     }
   }
 }
+
+@media screen and (max-width: $breakpoint-desktopM) {
+  .reviewSlide {
+    @include flex($align: center, $justify: center);
+  }
+}
+
+@media screen and (max-width: $breakpoint-laptopM) {
+  .reviewsContainer h2 {
+    margin-bottom: 20px;
+  }
+
+  .sliderNavigation {
+    padding-right: 0;
+    justify-content: center;
+  }
+}

@@ -37,7 +37,7 @@ export const Reviews = () => {
         >
           <Swiper
             modules={[Navigation]}
-            slidesPerView={3}
+            slidesPerView={1}
             spaceBetween={20}
             watchOverflow
             navigation={{
@@ -45,9 +45,17 @@ export const Reviews = () => {
               nextEl: `.${styles.nextButton}`,
               disabledClass: styles.disabled,
             }}
+            breakpoints={{
+              880: {
+                slidesPerView: 2,
+              },
+              1150: {
+                slidesPerView: 3,
+              },
+            }}
           >
             {reviewsItems.map(({ id, ...reviewInfo }) => (
-              <SwiperSlide key={id}>
+              <SwiperSlide key={id} className={styles.reviewSlide}>
                 <ReviewItem {...reviewInfo} />
               </SwiperSlide>
             ))}

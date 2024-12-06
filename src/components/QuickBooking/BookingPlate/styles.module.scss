@@ -51,3 +51,16 @@
   background-size: 200% 100%;
   animation: loading 1.5s infinite;
 }
+
+@media screen and (max-width: $breakpoint-desktopM) {
+  .bookingPlate {
+    flex-direction: column;
+    width: fit-content;
+    border-radius: $border-radius-md;
+    margin: 0 auto;
+  }
+
+  .datePicker {
+    width: 100px;
+  }
+}

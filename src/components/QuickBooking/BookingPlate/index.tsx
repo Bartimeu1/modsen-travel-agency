@@ -108,6 +108,7 @@ export const BookingPlate = () => {
       </BookingItem>
       <BookingItem name={checkIn} image={<CalendarIcon />}>
         <DatePicker
+          className={styles.datePicker}
           onChange={onDateFieldChange(checkIn)}
           selected={bookingValues[checkIn]}
           minDate={getTargetDate()}
@@ -116,6 +117,7 @@ export const BookingPlate = () => {
       </BookingItem>
       <BookingItem name={checkOut} image={<CalendarIcon />}>
         <DatePicker
+          className={styles.datePicker}
           onChange={onDateFieldChange(checkOut)}
           selected={bookingValues[checkOut]}
           minDate={addOneDay(bookingValues[checkIn])}

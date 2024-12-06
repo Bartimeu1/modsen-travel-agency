@@ -61,3 +61,19 @@
     margin-left: 15px;
   }
 }
+
+@media screen and (max-width: $breakpoint-tabletS) {
+  .reviewItem {
+    max-width: none;
+    padding: 30px 15px;
+  }
+
+  .reviewTopper,
+  .reviewContent {
+    margin-bottom: 40px;
+  }
+
+  .reviewContent p {
+    font-size: $font-size-xs3;
+  }
+}

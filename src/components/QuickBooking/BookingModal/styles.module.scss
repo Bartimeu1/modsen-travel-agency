@@ -9,6 +9,7 @@
   backdrop-filter: blur(10px);
   z-index: 50;
   transition: 0.5s all;
+  padding: 0 15px;
 }
 
 .bookingForm {
@@ -75,5 +76,11 @@
   &:hover {
     background: inherit;
     color: $color-brown;
+  }
+}
+
+@media screen and (max-width: $breakpoint-mobileS) {
+  .bookingForm h2 {
+    font-size: $font-size-sm;
   }
 }

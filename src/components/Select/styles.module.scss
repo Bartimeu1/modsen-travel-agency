@@ -40,6 +40,7 @@
   width: 100%;
   border: 1px solid $color-dark-brown;
   border-radius: $border-radius-md;
+  z-index: 10;
 
   & button {
     @include font(

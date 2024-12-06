@@ -11,7 +11,7 @@ export const BookingItem = (props: BookingItemProps) => {
 
   return (
     <div className={styles.bookingItem}>
-      {image}
+      <div className={styles.imageWrapper}>{image}</div>
       <div className={styles.itemContent}>
         <p className={styles.itemName}>{t(`fields.${name}`)}</p>
         {children}
