@@ -9,12 +9,11 @@
 .userInfo {
   @include flex($justify: space-between);
 
-  margin: 0 -36px 35px;
+  margin-bottom: 35px;
 }
 
 .infoField {
   width: 100%;
-  margin: 0 36px;
 
   & label {
     @include font($family: var(--font-mulish), $size: $font-size-xs);
@@ -36,6 +35,10 @@
     &::placeholder {
       opacity: 0.5;
     }
+  }
+
+  &:first-child {
+    margin-right: 50px;
   }
 }
 
@@ -59,6 +62,7 @@
     min-height: 334px;
     resize: none;
     outline: none;
+    box-sizing: border-box;
 
     &::placeholder {
       opacity: 0.5;
@@ -83,5 +87,31 @@
   &:hover {
     background: inherit;
     color: $color-yellow;
+  }
+}
+
+@media screen and (max-width: $breakpoint-tabletM) {
+  .contact {
+    margin-bottom: 50px;
+  }
+
+  .messageField textarea {
+    min-height: 250px;
+  }
+
+  .submitButton {
+    align-self: center;
+    font-size: $font-size-xs;
+    padding: 16px 60px;
+  }
+
+  .userInfo {
+    @include flex($direction: column);
+  }
+
+  .infoField {
+    &:first-child {
+      margin: 0 0 30px;
+    }
   }
 }

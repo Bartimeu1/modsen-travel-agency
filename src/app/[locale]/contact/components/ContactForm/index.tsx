@@ -101,7 +101,6 @@ export const ContactForm = () => {
             <label>{t('labels.message')}</label>
             <textarea
               name="message"
-              className={styles.userMessage}
               value={message}
               placeholder={t('placeholders.message')}
               onChange={onFormFieldChange}
