@@ -123,7 +123,11 @@ export const BookingPlate = () => {
           minDate={addOneDay(bookingValues[checkIn])}
         />
       </BookingItem>
-      <button className={styles.bookingButton} onClick={onBookNowButtonClick}>
+      <button
+        className={styles.bookingButton}
+        onClick={onBookNowButtonClick}
+        data-testid="booking-button"
+      >
         {t('button')}
       </button>
       {isBookingModalVisible && (

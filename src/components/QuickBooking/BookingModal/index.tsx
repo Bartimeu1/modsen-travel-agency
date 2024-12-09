@@ -86,6 +86,7 @@ export const BookingModal = ({ onSendMail, onClose }: BookingModalProps) => {
           ref={contentRef}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
+          data-testid="booking-modal"
         >
           <h2>{t('title')}</h2>
           <FormField errorText={nameErrorText} className={styles.bookingField}>
@@ -95,6 +96,7 @@ export const BookingModal = ({ onSendMail, onClose }: BookingModalProps) => {
               value={nameValue}
               placeholder={t('namePlaceholder')}
               onChange={onFormFieldChange}
+              data-testid="booking-name"
             />
           </FormField>
           <FormField errorText={emailErrorText} className={styles.bookingField}>
@@ -104,9 +106,14 @@ export const BookingModal = ({ onSendMail, onClose }: BookingModalProps) => {
               value={emailValue}
               placeholder={t('emailPlaceholder')}
               onChange={onFormFieldChange}
+              data-testid="booking-email"
             />
           </FormField>
-          <button type="submit" className={styles.submitButton}>
+          <button
+            type="submit"
+            className={styles.submitButton}
+            data-testid="booking-submit"
+          >
             {t('button')}
           </button>
         </MotionForm>

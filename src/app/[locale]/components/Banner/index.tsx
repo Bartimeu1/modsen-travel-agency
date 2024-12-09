@@ -22,7 +22,11 @@ export const Banner = () => {
           <h3>{t('company')}</h3>
           <h1>{t('title')}</h1>
           <p className={styles.bannerSubtitle}>{t('subtitle')}</p>
-          <Link href={routes.tour} className={styles.tourLink}>
+          <Link
+            href={routes.tour}
+            className={styles.tourLink}
+            data-testid="tour-button"
+          >
             <button className={styles.tourButton}>
               <PlayIcon />
             </button>

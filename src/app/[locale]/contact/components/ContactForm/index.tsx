@@ -84,6 +84,7 @@ export const ContactForm = () => {
                 value={fullName}
                 placeholder={t('placeholders.name')}
                 onChange={onFormFieldChange}
+                data-testid="user-fullName"
               />
             </FormField>
             <FormField errorText={emailErrors} className={styles.infoField}>
@@ -94,6 +95,7 @@ export const ContactForm = () => {
                 value={email}
                 placeholder={t('placeholders.email')}
                 onChange={onFormFieldChange}
+                data-testid="user-email"
               />
             </FormField>
           </div>
@@ -104,9 +106,14 @@ export const ContactForm = () => {
               value={message}
               placeholder={t('placeholders.message')}
               onChange={onFormFieldChange}
+              data-testid="user-message"
             />
           </FormField>
-          <button type="submit" className={styles.submitButton}>
+          <button
+            type="submit"
+            className={styles.submitButton}
+            data-testid="contact-submit"
+          >
             {t('submit')}
           </button>
         </form>

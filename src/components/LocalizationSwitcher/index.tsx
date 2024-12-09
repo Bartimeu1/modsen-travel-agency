@@ -46,7 +46,7 @@ export const LocalizationSwitcher = () => {
 
   return (
     <div className={styles.localeSwitcher} ref={localeSelectRef}>
-      <button onClick={onSelectionButtonClick}>
+      <button onClick={onSelectionButtonClick} data-testid="locale-button">
         {localizationFlags[locale]}
       </button>
       {isLocaleSelection && (
@@ -58,6 +58,7 @@ export const LocalizationSwitcher = () => {
               className={classNames(styles.localeSelectButton, {
                 [styles.target]: key === locale,
               })}
+              data-testid="locale-item"
             >
               {flag}
             </button>

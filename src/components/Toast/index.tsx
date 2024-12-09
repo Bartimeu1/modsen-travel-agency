@@ -17,7 +17,10 @@ export const Toast = memo(function Toast(props: IToastProps) {
   useTimeout(() => closeToast(), 8000);
 
   return createPortal(
-    <aside className={classNames(styles.toast, styles[type])}>
+    <aside
+      className={classNames(styles.toast, styles[type])}
+      data-testid="app-toast"
+    >
       <p className={styles.toastText}>{t(type)}</p>
     </aside>,
     document.body,

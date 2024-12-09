@@ -78,8 +78,13 @@ export const SubscribeForm = () => {
             className={styles.subscribeInput}
             value={emailValue}
             onChange={onFormFieldChange}
+            data-testid="subscribe-email"
           />
-          <button className={styles.subscribeButton} type="submit">
+          <button
+            className={styles.subscribeButton}
+            type="submit"
+            data-testid="subscribe-submit"
+          >
             {t('button')}
           </button>
         </FormField>

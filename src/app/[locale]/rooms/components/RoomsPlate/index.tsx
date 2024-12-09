@@ -10,7 +10,7 @@ import { Loader } from '@components/Loader';
 import { MotionArticle } from '@components/Motion';
 
 import { BASE_ROOMS_DATA, routes } from '@root/constants';
-import { GET_ROOMS } from '@root/graphql/rooms';
+import { GET_ROOMS } from '@root/graphql/queries';
 import { QueryApiNamesEnum, RoomsData } from '@root/types';
 
 import {
@@ -80,7 +80,7 @@ export const RoomsPlate = () => {
               className={styles.roomItem}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              viewport={{ once: true, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.3 }}
             >
               <div className={styles.topper}>
                 <ImageWithSkeleton
