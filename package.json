@@ -11,7 +11,7 @@
     "prettier": "prettier .",
     "prettier:fix": "prettier . --write",
     "test:unit": "jest",
-    "cypress-open": "yarn cypress open --browser chrome --e2e",
+    "test:e2e": "yarn cypress open --browser chrome --e2e",
     "cypress-run": "yarn cypress run"
   },
   "dependencies": {
