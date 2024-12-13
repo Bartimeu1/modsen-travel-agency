@@ -3,7 +3,7 @@ import { ToastTypesEnum } from '@root/types';
 
 import { SubscribeForm } from './';
 
-import { fireEvent,render, waitFor } from '@testing-library/react';
+import { fireEvent, render, waitFor } from '@testing-library/react';
 
 jest.mock('next-intl', () => ({
   useTranslations: jest.fn(() => jest.fn((key) => key)),

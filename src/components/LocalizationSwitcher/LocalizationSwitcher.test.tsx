@@ -2,7 +2,7 @@ import { localizationItems } from '@root/constants';
 
 import { LocalizationSwitcher } from './';
 
-import { fireEvent,render } from '@testing-library/react';
+import { fireEvent, render } from '@testing-library/react';
 
 jest.mock('@/navigation', () => ({
   useRouter: jest.fn(),

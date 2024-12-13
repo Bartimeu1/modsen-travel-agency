@@ -1,7 +1,7 @@
 import { TooltipProps } from './types';
 import { Tooltip } from './';
 
-import { fireEvent,render } from '@testing-library/react';
+import { fireEvent, render } from '@testing-library/react';
 
 const MOCKED_PROPS: TooltipProps = {
   text: 'mocked text',

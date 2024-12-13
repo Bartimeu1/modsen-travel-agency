@@ -1,7 +1,7 @@
 import { BookingModalProps } from './types';
 import { BookingModal } from './';
 
-import { act, fireEvent,render, waitFor } from '@testing-library/react';
+import { act, fireEvent, render, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
 jest.mock('next-intl', () => ({
