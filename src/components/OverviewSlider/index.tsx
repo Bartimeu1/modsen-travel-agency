@@ -26,7 +26,7 @@ export const OverviewSlider = ({ banner }: OverviewSliderProps) => {
     width > SLIDER_HORIZONTAL_BREAKPOINT ? vertical : horizontal;
 
   return (
-    <div className={styles.sliderContainer}>
+    <div className={styles.sliderContainer} data-testid="overview-slider">
       <Swiper
         onSwiper={setThumbsSwiper}
         direction={thumbnailDirection}

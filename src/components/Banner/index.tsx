@@ -10,7 +10,10 @@ export const Banner = (props: BannerProps) => {
   const { title, subtitle, className } = props;
 
   return (
-    <section className={classNames(styles.banner, className)}>
+    <section
+      className={classNames(styles.banner, className)}
+      data-testid="banner"
+    >
       <MotionDiv
         className={classNames('container', styles.bannerContainer)}
         initial={{ x: -200, opacity: 0 }}

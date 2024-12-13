@@ -12,7 +12,7 @@ export const Footer = () => {
   const t = useTranslations('Footer');
 
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} data-testid="footer">
       <div className={classNames('container', styles.footerTopper)}>
         <div className={styles.infoText}>
           <h3>{t('infoTitle')}</h3>

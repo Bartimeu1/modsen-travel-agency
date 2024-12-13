@@ -10,7 +10,7 @@ export const BookingItem = (props: BookingItemProps) => {
   const t = useTranslations('Home.BookingPlate');
 
   return (
-    <div className={styles.bookingItem}>
+    <div className={styles.bookingItem} data-testid="booking-item">
       <div className={styles.imageWrapper}>{image}</div>
       <div className={styles.itemContent}>
         <p className={styles.itemName}>{t(`fields.${name}`)}</p>

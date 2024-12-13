@@ -11,7 +11,10 @@ export const FormField = (props: IFormFieldProps) => {
   const t = useTranslations('Validation');
 
   return (
-    <div className={classNames(styles.formField, className)}>
+    <div
+      className={classNames(styles.formField, className)}
+      data-testid="form-field"
+    >
       {children}
       {errorText && <p className={styles.errorText}>{t(errorText)}</p>}
     </div>

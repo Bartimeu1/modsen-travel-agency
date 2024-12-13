@@ -8,7 +8,7 @@ import styles from './styles.module.scss';
 
 export const Loader = ({ className }: LoaderProps) => {
   return (
-    <div className={classNames(styles.loader, className)}>
+    <div className={classNames(styles.loader, className)} data-testid="loader">
       <LoaderIcon />
     </div>
   );

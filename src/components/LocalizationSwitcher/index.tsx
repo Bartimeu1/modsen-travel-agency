@@ -45,7 +45,11 @@ export const LocalizationSwitcher = () => {
   useOnClickOutside(localeSelectRef, onSelectOutsideClick);
 
   return (
-    <div className={styles.localeSwitcher} ref={localeSelectRef}>
+    <div
+      className={styles.localeSwitcher}
+      ref={localeSelectRef}
+      data-testid="localization-switcher"
+    >
       <button onClick={onSelectionButtonClick} data-testid="locale-button">
         {localizationFlags[locale]}
       </button>

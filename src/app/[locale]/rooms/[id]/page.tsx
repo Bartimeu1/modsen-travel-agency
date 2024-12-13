@@ -2,7 +2,7 @@ import { getTranslations } from 'next-intl/server';
 
 import { Banner } from '@components/Banner';
 
-import { GET_ROOM_BY_ID,GET_ROOMS_IDS } from '@root/graphql/queries';
+import { GET_ROOM_BY_ID, GET_ROOMS_IDS } from '@root/graphql/queries';
 import { query } from '@root/lib/ApolloClient';
 import { RoomByIdResponse, RoomsIdsResponse } from '@root/types';
 import { QueryApiNamesEnum } from '@root/types';

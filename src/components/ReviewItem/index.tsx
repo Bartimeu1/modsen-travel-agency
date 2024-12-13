@@ -12,7 +12,7 @@ export const ReviewItem = (props: ReviewItemProps) => {
   const { text, userAvatar, userName, date, rating } = props;
 
   return (
-    <article className={styles.reviewItem}>
+    <article className={styles.reviewItem} data-testid="review-item">
       <div className={styles.reviewTopper}>
         <p>{date}</p>
         <StarRating

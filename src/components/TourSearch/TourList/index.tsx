@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl';
 
 import { Loader } from '@components/Loader';
 
-import { getLimitedElements } from '@root/utils/get-limited-elements';
+import { getLimitedElements } from '@utils/get-limited-elements';
 
 import { TourCard } from '../TourCard';
 
@@ -31,7 +31,7 @@ export const TourList = (props: TourListProps) => {
   }
 
   return (
-    <div className={countriesList}>
+    <div className={countriesList} data-testid="tour-list">
       {countries &&
         getLimitedElements(countries, maxItems).map(
           ({ id, name, currency, languages }) => (

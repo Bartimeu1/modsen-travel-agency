@@ -79,7 +79,7 @@ export const BookingModal = ({ onSendMail, onClose }: BookingModalProps) => {
 
   return (
     <PortalWrapper>
-      <div className={styles.bookingModal}>
+      <div className={styles.bookingModal} data-testid="booking-modal">
         <MotionForm
           onSubmit={onFormSubmit}
           className={styles.bookingForm}

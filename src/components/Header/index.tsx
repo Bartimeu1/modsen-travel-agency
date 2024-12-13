@@ -26,7 +26,7 @@ export const Header = () => {
   };
 
   return (
-    <header className={styles.header}>
+    <header className={styles.header} data-testid="header">
       <div className={classNames('container', styles.headerContainer)}>
         <Link href={routes.home} className={styles.logoLink}>
           <LogoIcon />
@@ -56,6 +56,7 @@ export const Header = () => {
           className={classNames(styles.burgerMenu, {
             [styles.active]: isBurgerActive,
           })}
+          data-testid="burger-button"
         >
           <span className={styles.burgerRow} />
         </button>
