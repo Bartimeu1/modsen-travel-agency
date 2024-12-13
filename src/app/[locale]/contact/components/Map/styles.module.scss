@@ -1,0 +1,12 @@
+.map {
+  width: 100%;
+  height: 355px;
+}
+
+.marker {
+  width: 17px;
+  height: 20px;
+  background-image: url('~src/assets/images/marker.png');
+  background-size: cover;
+  cursor: pointer;
+}

@@ -1,0 +1,69 @@
+.tourSearchContainer {
+  max-width: 1024px;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.topper {
+  margin-bottom: 41px;
+  text-align: center;
+
+  & h3 {
+    @include font(
+      $family: var(--font-poppins),
+      $size: $font-size-md2,
+      $weight: $font-weight-medium,
+      $line: 60px
+    );
+
+    color: $color-black;
+  }
+
+  & p {
+    @include font(
+      $family: var(--font-poppins),
+      $size: $font-size-xs2,
+      $weight: $font-weight-medium,
+      $line: 22px
+    );
+  }
+}
+
+.search {
+  position: relative;
+  margin-bottom: 100px;
+
+  & input {
+    @include font($family: var(--font-inter), $size: $font-size-xs2);
+
+    background: $color-input-bg;
+    border-radius: $border-radius-sm;
+    padding: 8px 0 8px 44px;
+    width: 100%;
+    max-width: 284px;
+    outline: none;
+
+    &::placeholder {
+      color: $color-black;
+      opacity: 0.4;
+    }
+  }
+
+  & svg {
+    position: absolute;
+    left: 13.5px;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+@media screen and (max-width: $breakpoint-tabletM) {
+  .search {
+    width: fit-content;
+    margin: 0 auto 50px;
+
+    & input {
+      width: 300px;
+    }
+  }
+}

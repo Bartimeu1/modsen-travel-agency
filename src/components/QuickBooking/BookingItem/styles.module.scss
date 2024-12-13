@@ -1,0 +1,44 @@
+.bookingItem {
+  @include flex();
+
+  min-width: 155px;
+}
+
+.itemContent {
+  @include flex($direction: column);
+
+  margin-left: 23px;
+
+  & input {
+    @include font(
+      $family: var(--font-poppins),
+      $weight: $font-weight-medium,
+      $size: $font-size-xs4
+    );
+
+    outline: none;
+    color: $color-dark;
+    opacity: 0.6;
+  }
+}
+
+.itemName {
+  @include font(
+    $size: $font-size-xs2,
+    $family: var(--font-poppins),
+    $weight: $font-weight-medium
+  );
+
+  margin-bottom: 7px;
+}
+
+.imageWrapper {
+  width: 20px;
+}
+
+@media screen and (max-width: $breakpoint-desktopM) {
+  .bookingItem {
+    margin-bottom: 20px;
+    align-items: center;
+  }
+}

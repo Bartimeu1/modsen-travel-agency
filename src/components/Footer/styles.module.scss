@@ -1,0 +1,116 @@
+.footer {
+  background: $color-brown;
+  padding: 80px 0 50px;
+}
+
+.footerTopper {
+  @include flex($justify: space-between);
+}
+
+.infoText {
+  @include flex($direction: column);
+
+  & h3 {
+    @include font(
+      $family: var(--font-dancing),
+      $size: $font-size-md,
+      $line: 36px
+    );
+
+    color: $color-white;
+    margin-bottom: 13px;
+  }
+
+  & p {
+    @include font(
+      $size: $font-size-xs4,
+      $line: $font-size-xs3,
+      $weight: $font-weight-medium
+    );
+
+    color: $color-white;
+    text-align: justify;
+    max-width: 270px;
+  }
+}
+
+.footerNav {
+  @include flex($justify: space-between);
+
+  max-width: 446px;
+  width: 100%;
+}
+
+.navBlock {
+  @include flex($direction: column);
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  & h5 {
+    @include font($size: $font-size-xs2, $weight: $font-weight-semiBold);
+
+    margin-bottom: 22px;
+    color: $color-white;
+  }
+
+  & a {
+    @include font($size: $font-size-xs4, $weight: $font-weight-semiBold);
+
+    margin-bottom: 9px;
+    color: $color-white;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.footerBottomer {
+  text-align: center;
+  padding-top: 50px;
+  margin-top: 64px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background: $color-line;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+  }
+
+  & p {
+    @include font($size: $font-size-xs2, $weight: $font-weight-medium);
+
+    color: $color-white;
+  }
+}
+
+@media screen and (max-width: $breakpoint-desktopM) {
+  .footer {
+    padding: 30px 0;
+  }
+
+  .footerTopper {
+    @include flex($direction: column, $align: center);
+  }
+
+  .infoText {
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .footerNav {
+    order: 3;
+  }
+
+  .footerBottomer {
+    margin-top: 30px;
+    padding-top: 25px;
+  }
+}

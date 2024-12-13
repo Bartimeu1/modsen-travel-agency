@@ -1,0 +1,58 @@
+.facilities {
+  margin-bottom: 73px;
+}
+
+.facilitiesHeading {
+  @include flex($direction: column, $align: center);
+
+  margin-bottom: 49px;
+  text-align: center;
+
+  & h2 {
+    @include font(
+      $family: var(--font-poppins),
+      $size: $font-size-md2,
+      $line: 60px,
+      $weight: $font-weight-medium
+    );
+
+    margin-bottom: 12px;
+    color: $color-black;
+  }
+
+  & p {
+    @include font(
+      $family: var(--font-poppins),
+      $size: $font-size-xs2,
+      $line: 22px
+    );
+  }
+}
+
+.facilitiesList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  justify-items: center;
+  gap: 30px;
+}
+
+.facilitiesItem {
+  @include flex($justify: center, $direction: column, $align: center);
+
+  max-width: 280px;
+  width: 100%;
+  height: 250px;
+  padding: 0 25px;
+  background: $color-light-grey;
+
+  & p {
+    @include font(
+      $family: var(--font-poppins),
+      $size: $font-size-xs,
+      $line: 30px
+    );
+
+    margin-top: 22px;
+    color: $color-brown;
+  }
+}

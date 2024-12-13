@@ -1,0 +1,13 @@
+.countriesList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  justify-content: space-between;
+  justify-items: center;
+  gap: 46px;
+}
+
+.infoText {
+  @include font($size: $font-size-md2, $weight: $font-weight-bold);
+
+  text-align: center;
+}

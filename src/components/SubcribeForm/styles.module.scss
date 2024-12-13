@@ -1,0 +1,70 @@
+.subscribeForm {
+  width: 100%;
+  max-width: 360px;
+
+  & h4 {
+    @include font($size: $font-size-xs2, $weight: $font-weight-semiBold);
+
+    margin-bottom: 22px;
+    color: $color-white;
+  }
+}
+
+.subscribeSubtitle {
+  @include font($size: $font-size-xs4, $weight: $font-weight-semiBold);
+
+  color: $color-white;
+  max-width: 235px;
+  margin-bottom: 16px;
+}
+
+.subscribeInput {
+  @include font($size: $font-size-xs4, $weight: $font-weight-medium);
+
+  padding: 18px 0 18px 18px;
+  width: 100%;
+  background: $color-white;
+  border-radius: $border-radius-xs;
+  border: none;
+  outline: none;
+
+  &::placeholder {
+    opacity: 0.7;
+  }
+}
+
+.subscribeButton {
+  @include font($weight: $font-weight-semiBold);
+
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translate(0, -50%);
+  background: $color-brown;
+  padding: 11px 0;
+  max-width: 111px;
+  width: 100%;
+  color: $color-white;
+  transition: 0.3s ease-in-out;
+  border: 1px solid $color-brown;
+
+  &:hover {
+    background: $color-white;
+    color: $color-brown;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+@media screen and (max-width: $breakpoint-desktopM) {
+  .subscribeForm {
+    @include flex($direction: column, $align: center);
+
+    max-width: 320px;
+    text-align: center;
+    margin-bottom: 35px;
+
+    & h4 {
+      margin-bottom: 15px;
+    }
+  }
+}

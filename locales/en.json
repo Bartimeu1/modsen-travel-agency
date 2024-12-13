@@ -1,0 +1,173 @@
+{
+  "Header": {
+    "home": "Home",
+    "rooms": "Rooms",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "Footer": {
+    "infoTitle": "Paradise view",
+    "infoText": "The service at the Hotel Monteleone was exceptional. There was absolutely no issue that was not addressed timely and with satisfactory results. We were particulary impressed with how the hotel staff anticipated our needs (periodically coming by the Board Room to check with us)",
+    "navigation": {
+      "titles": {
+        "quickLinks": "Quick links",
+        "company": "Company",
+        "socialMedia": "Social media"
+      },
+      "links": {
+        "roomBooking": "Room booking",
+        "rooms": "Rooms",
+        "contact": "Contact",
+        "explore": "Explore",
+        "privacyPolicy": "Privacy policy",
+        "refundPolicy": "Refund policy",
+        "FAQ": "F.A.Q",
+        "about": "About",
+        "facebook": "Facebook",
+        "twitter": "Twitter",
+        "instagram": "Instagram",
+        "linkedin": "Linkedin"
+      }
+    }
+  },
+  "Subscribe": {
+    "title": "Newsletter",
+    "subtitle": "Kindly subscribe to our newsletter to get latest deals on our rooms and vacation discount.",
+    "placeholder": "Enter your email",
+    "button": "Subscribe"
+  },
+  "Toast": {
+    "error": "Something went wrong!",
+    "success": "Operation completed successfully!"
+  },
+  "Validation": {
+    "fieldRequired": "This field is required",
+    "invalidEmail": "Must be a valid email",
+    "shortValue": "This value is too short",
+    "longValue": "This value is too long"
+  },
+  "Home": {
+    "Facilities": {
+      "title": "Our Facilities",
+      "subtitle": "We offer modern (5 star) hotel facilities for your comfort.",
+      "items": {
+        "swimming": "Swimming Pool",
+        "wifi": "Wifi",
+        "breakfast": "Breakfast",
+        "gym": "Gym",
+        "game": "Game center",
+        "light": "24/7 Light",
+        "laundry": "Laundry",
+        "parking": "Parking space"
+      }
+    },
+    "Banner": {
+      "company": "Paradise View",
+      "title": "Hotel for every moment rich in emotion",
+      "subtitle": "Every moment feels like the first time in paradise view",
+      "tourButton": "Take a tour"
+    },
+    "Rooms": {
+      "title": "Luxurious Rooms",
+      "subtitle": "All room are design for your comfort",
+      "items": {
+        "base": "Television set, Extra sheets and Breakfast",
+        "middle": "Television set, Extra sheets, Breakfast, and fireplace",
+        "luxury": "Television set, Extra sheets, Breakfast, and fireplace, Console and bed rest"
+      }
+    },
+    "Reviews": {
+      "title": "Testimonies"
+    },
+    "BookingPlate": {
+      "fields": {
+        "location": "Location",
+        "roomType": "Room Type",
+        "person": "Person",
+        "checkIn": "Check In",
+        "checkOut": "Check Out"
+      },
+      "button": "Book Now",
+      "modal": {
+        "title": "Enter your details",
+        "button": "Confirm",
+        "namePlaceholder": "Enter your Name",
+        "emailPlaceholder": "Enter your Email"
+      }
+    }
+  },
+  "Tour": {
+    "Banner": {
+      "company": "Paradise View",
+      "title": "Cross-country tour",
+      "subtitle": "Every moment feels like the first time in paradise view",
+      "link": "Book now"
+    },
+    "BestTour": {
+      "title": "Give yourself the best tour"
+    },
+    "TourSearch": {
+      "title": "Tour search",
+      "subtitle": "Choose a tour to any country",
+      "placeholder": "Search"
+    },
+    "TourCard": {
+      "currency": "Currency",
+      "button": "More"
+    },
+    "TourList": {
+      "errorText": "Request Error",
+      "nothingFoundText": "Nothing found"
+    }
+  },
+  "Contact": {
+    "Banner": {
+      "title": "Contact us",
+      "subTitle": "The elegant luxury bedrooms in this gallery showcase custom interior designs & decorating ideas. View pictures and find your perfect luxury bedroom design."
+    },
+    "Form": {
+      "labels": {
+        "name": "Fullname",
+        "email": "Email",
+        "message": "Message"
+      },
+      "placeholders": {
+        "name": "e.g John Becker",
+        "email": "johnbecker@gmail.com",
+        "message": "message"
+      },
+      "submit": "Send Message"
+    }
+  },
+  "Rooms": {
+    "Banner": {
+      "title": "Rooms and Suites",
+      "subTitle": "The elegant luxury bedrooms in this gallery showcase custom interior designs & decorating ideas. View pictures and find your perfect luxury bedroom design."
+    },
+    "RoomsPlate": {
+      "available": "Available",
+      "yes": "Yes",
+      "no": "No",
+      "bookButton": "Book now",
+      "showMoreButton": "Show more"
+    }
+  },
+  "Room": {
+    "Banner": {
+      "title": "Rooms and Suites"
+    },
+    "RoomOverview": {
+      "review": "Customer Review",
+      "reservation": "Reservation",
+      "notAvailable": "This room is not available"
+    }
+  },
+  "NotFound": {
+    "title": "This page does not exist",
+    "homeLink": "Home"
+  },
+  "Error": {
+    "title": "Something went wrong",
+    "homeLink": "Home"
+  }
+}

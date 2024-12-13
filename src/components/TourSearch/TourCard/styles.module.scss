@@ -1,0 +1,75 @@
+.tourCard {
+  @include flex($direction: column, $justify: space-between);
+
+  box-shadow: 0px 4px 10px 0px $color-shadow;
+  border-radius: $border-radius-sm;
+  padding: 40px 32px 17px 21px;
+  width: 100%;
+  max-width: 280px;
+}
+
+.cardFlag {
+  text-align: center;
+}
+
+.currency {
+  @include font(
+    $family: var(--font-roboto),
+    $weight: $font-weight-bold,
+    $size: $font-size-xs2
+  );
+
+  margin-bottom: 29px;
+}
+
+.cardBottomer {
+  @include flex($justify: space-between, $align: flex-end);
+
+  margin-top: 25px;
+
+  & button {
+    @include font(
+      $family: var(--font-roboto),
+      $weight: $font-weight-bold,
+      $size: $font-size-xs3
+    );
+
+    background: $color-aqua;
+    border-radius: $font-size-xs4;
+    color: $color-white;
+    text-align: center;
+    min-width: 80px;
+    padding: 3.5px 0;
+    transition: 0.3s all ease-in-out;
+    border: 1px solid $color-aqua;
+
+    &:hover {
+      background: inherit;
+      color: $color-aqua;
+    }
+  }
+}
+
+.cardInfo {
+  @include flex($direction: column);
+
+  & h5 {
+    @include font(
+      $family: var(--font-roboto),
+      $weight: $font-weight-bold,
+      $size: $font-size-sm
+    );
+
+    margin-bottom: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+  }
+
+  & p {
+    @include font($family: var(--font-roboto), $size: $font-size-xs3);
+
+    color: $color-carbon;
+  }
+}

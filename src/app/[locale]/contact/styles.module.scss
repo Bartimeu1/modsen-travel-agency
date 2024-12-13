@@ -1,0 +1,15 @@
+.contactBanner {
+  padding: 253px 0;
+  margin-bottom: 90px;
+}
+
+@media screen and (max-width: $breakpoint-tabletM) {
+  .contactBanner {
+    padding: 140px 0;
+    margin-bottom: 40px;
+
+    & p {
+      font-size: $font-size-xs2;
+    }
+  }
+}

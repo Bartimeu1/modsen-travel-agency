@@ -1,0 +1,126 @@
+.overviewContainer {
+  @include flex($justify: space-between);
+
+  margin-bottom: 140px;
+}
+
+.roomContent {
+  @include flex(
+    $direction: column,
+    $justify: space-between,
+    $align: flex-start
+  );
+}
+
+.roomInfo {
+  @include flex($direction: column);
+
+  padding-right: 90px;
+
+  & h2 {
+    @include font(
+      $family: var(--font-poppins),
+      $size: $font-size-md3,
+      $line: 63px
+    );
+  }
+}
+
+.slider {
+  width: 532px;
+}
+
+.roomPrice {
+  @include font(
+    $family: var(--font-poppins),
+    $size: $font-size-sm,
+    $line: 36px
+  );
+
+  color: $color-dark-grey;
+  margin-bottom: 10px;
+}
+
+.roomReviews {
+  @include flex($align: center);
+
+  margin-bottom: 13px;
+  height: 30px;
+
+  & p {
+    @include font($family: var(--font-poppins), $size: 13px, $line: 20px);
+
+    color: $color-dark-grey;
+    padding-left: 20px;
+    margin-left: 20px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: -5px;
+      height: 30px;
+      background: $color-dark-grey;
+      width: 1px;
+    }
+  }
+}
+
+.infoText {
+  @include font($family: var(--font-poppins), $size: 13px, $line: 20px);
+
+  max-width: 424px;
+}
+
+.reservationButton {
+  @include font(
+    $family: var(--font-poppins),
+    $size: $font-size-xs,
+    $weight: $font-weight-light
+  );
+
+  border: 1px solid $color-pink;
+  border-radius: $border-radius-lg;
+  background: inherit;
+  padding: 15px 50px 19px;
+  transition: 0.2s all ease-in-out;
+
+  &:hover {
+    color: $color-pink;
+  }
+
+  &:disabled {
+    border: 1px solid $color-dark-grey;
+    color: $color-dark-grey;
+  }
+}
+
+@media screen and (max-width: $breakpoint-desktopM) {
+  .overviewContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .roomContent {
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .roomInfo {
+    align-items: center;
+    text-align: center;
+    padding-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .roomInfo h2 {
+    font-size: 38px;
+  }
+
+  .infoText {
+    font-size: $font-size-xs4;
+    line-height: 18px;
+  }
+}

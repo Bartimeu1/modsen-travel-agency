@@ -1,0 +1,66 @@
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.bookingPlate {
+  @include flex($align: center, $justify: space-between);
+
+  width: 100%;
+  background: $color-white;
+  padding: 27px 40px;
+  z-index: 3;
+  position: relative;
+}
+
+.bookingButton {
+  @include font(
+    $size: $font-size-xs2,
+    $weight: $font-weight-medium,
+    $family: var(--font-poppins)
+  );
+
+  background: $color-brown;
+  color: $color-white;
+  padding: 20px 51px;
+  border-radius: $border-radius-xs;
+  border: 1px solid $color-brown;
+  transition: 0.3s all ease-in-out;
+
+  &:hover {
+    background: inherit;
+    color: $color-brown;
+  }
+}
+
+.plateLoader {
+  width: 100%;
+  min-height: 120px;
+  z-index: 3;
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    rgba(124, 106, 70, 0.1) 25%,
+    rgba(124, 106, 70, 0.3) 50%,
+    rgba(124, 106, 70, 0.1) 75%
+  );
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@media screen and (max-width: $breakpoint-desktopM) {
+  .bookingPlate {
+    flex-direction: column;
+    width: fit-content;
+    border-radius: $border-radius-md;
+    margin: 0 auto;
+  }
+
+  .datePicker {
+    width: 100px;
+  }
+}

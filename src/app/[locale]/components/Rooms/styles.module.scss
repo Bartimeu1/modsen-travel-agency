@@ -1,0 +1,118 @@
+.rooms {
+  @include bgImage($image: '~src/assets/images/roomsBg.webp');
+
+  position: relative;
+  padding: 27px 0 57px;
+  margin-bottom: 63px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    background: $color-brown;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+}
+
+.roomsContainer {
+  @include flex($direction: column);
+
+  z-index: 2;
+  position: relative;
+}
+
+.roomsTopper {
+  @include flex($direction: column);
+
+  width: 100%;
+  text-align: center;
+  margin-bottom: 70px;
+
+  & h2 {
+    @include font($size: $font-size-lg, $weight: $font-weight-medium);
+
+    color: $color-white;
+    position: relative;
+    margin-bottom: 34px;
+
+    &::after {
+      content: '';
+      bottom: -20px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      position: absolute;
+      width: 138px;
+      height: 6px;
+      background: $color-white;
+    }
+  }
+
+  & p {
+    @include font($size: $font-size-xs2);
+
+    color: $color-white;
+  }
+}
+
+.roomsList {
+  @include flex($align: center, $wrap: wrap, $justify: space-between);
+}
+
+.roomsItem {
+  @include flex($direction: column, $align: center);
+
+  padding: 27px 28px;
+  width: fit-content;
+  background: $color-white;
+  height: 100%;
+  max-width: 370px;
+  max-height: 385px;
+  border-radius: $border-radius-sm;
+
+  & img {
+    margin-bottom: 19px;
+    height: 285px;
+    border-radius: $border-radius-sm;
+  }
+
+  & p {
+    @include font($weight: $font-weight-light, $size: $font-size-xs2);
+
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: $breakpoint-desktopM) {
+  .roomsList {
+    flex-direction: column;
+  }
+
+  .roomsItem {
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .roomsTopper {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-tabletS) {
+  .roomsItem {
+    max-width: none;
+    width: 100%;
+    text-align: center;
+
+    & img {
+      width: 90%;
+      height: auto;
+    }
+  }
+}
