@@ -25,7 +25,7 @@ export const Rooms = () => {
               className={styles.roomsItem}
               initial={{ x: -100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              viewport={{ once: true, amount: 1 }}
+              viewport={{ once: true, amount: 0.3 }}
             >
               <div className={styles.itemContent}>
                 <Image src={image} alt={`room-${code}`} />
