@@ -23,7 +23,7 @@ export const Facilities = () => {
               className={styles.facilitiesItem}
               initial={{ x: 100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              viewport={{ once: true, amount: 1 }}
+              viewport={{ once: true, amount: 0.5 }}
             >
               {icon}
               <p>{t(`items.${textKey}`)}</p>
