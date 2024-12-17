@@ -110,7 +110,7 @@ export const RoomsPlate = () => {
                   </div>
                   <Link
                     className={styles.bookLink}
-                    href={`${routes.rooms}/${id}`}
+                    href={`${routes.room}/${id}`}
                   >
                     {t('bookButton')}
                   </Link>
