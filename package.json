@@ -29,6 +29,7 @@
     "react-datepicker": "^7.3.0",
     "react-dom": "^18",
     "react-i18next": "^15.0.1",
+    "sharp": "^0.33.5",
     "swiper": "^11.1.12",
     "yup": "^1.4.0"
   },
