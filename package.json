@@ -12,8 +12,7 @@
     "prettier:fix": "prettier . --write",
     "test:unit": "jest",
     "test:e2e": "yarn cypress open --browser chrome --e2e",
-    "cypress-run": "yarn cypress run",
-    "testt": "yarn build && yarn start"
+    "cypress-run": "yarn cypress run"
   },
   "dependencies": {
     "@apollo/client": "^3.11.0-rc.2",
